@@ -1,0 +1,15 @@
+<Window x:Class="LayerByte.Certdesk.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Certdesk" Height="480" Width="760">
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Certdesk" FontSize="28" FontWeight="SemiBold" Margin="0,0,0,12"/>
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Items}" AutoGenerateColumns="True" IsReadOnly="True"/>
+        <TextBlock Grid.Row="2" Text="School Purpose Only. Defensive local dashboard." Margin="0,12,0,0"/>
+    </Grid>
+</Window>
